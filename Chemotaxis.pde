@@ -30,7 +30,7 @@
    Bacteria(){
      myX = (int)(Math.random()*500);
      myY = (int)(Math.random()*500);
-     colour = color(180,170, 200);
+     colour = color(50,168,82);
    }
    
    void move(){
@@ -52,7 +52,7 @@
    }
    
    void show(){
-     fill(50,168,82);
+     fill(colour);
      ellipse(myX,myY,20,20);
    }
  }
@@ -63,10 +63,11 @@
    Food(int x, int y){
      myX = x;
      myY = y;
+     colour = color(235,143,52);
    }
    
    void show(){
-     fill(235, 143, 52);
+     fill(colour);
      rect(myX,myY,50,50);
    }
    
